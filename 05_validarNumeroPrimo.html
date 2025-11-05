@@ -7,10 +7,23 @@
 
     //ENTRADA
 
+    const num = Number(prompt(`Informe um numero:`));
 
     //PROCESSAMENTO
 
+    let divisiveis = 0;
+
+    for(let i = 2; i < num; i++) {
+        if (num % i == 0) {
+            divisiveis = divisiveis + 1;
+        }
+    }
 
     //SAÍDA
-
+    if (divisiveis == 0) {
+        alert(`O número ${num} é um número primo!`);
+    }
+    else {
+        alert(`O número ${num} não é um número primo!`);
+    }
 </script>

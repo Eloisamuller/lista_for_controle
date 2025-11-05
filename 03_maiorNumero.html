@@ -6,16 +6,12 @@
     No final, apresente o maior número informado pelo usuário.
     */
 
-    //ENTRADA
-let nu01 = Number(prompt(`Informe um numero (1/5)`));
-let nu02 = Number(prompt(`Informe um numero (2/5)`));
-let nu03 = Number(prompt(`Informe um numero (3/5)`));
-let nu04 = Number(prompt(`Informe um numero (4/5)`));
-let nu05 = Number(prompt(`Informe um numero (5/5)`));
-    
-    //PROCESSAMENTO
+    let numeros = [];
+    for (let i = 1; i <= 5; i++) {
+        const numero = Number(prompt(`Informe o número ${i} de 5`));
+        numeros.push(numero);
+    }
 
-    
-    //SAÍDA
-
+    numeros.sort((x, y) => y - x);
+    alert(`O maior número é o ${numeros[0]}`);
 </script>
