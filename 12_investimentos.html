@@ -6,10 +6,21 @@
 
     //ENTRADA
 
+    let invest = 1000;
+    const meta = 2000;
+    const taxa = 0.02;
+    let dias = 0;
 
     //PROCESSAMENTO
 
-
+ if (invest < meta) {
+        invest += invest * taxa;
+        dias++;
+    }
     //SAÍDA
 
+    document.write(`Serão necessários ${dias} dias para que o investimento atinja R$${meta.toFixed(2)}.`);
+
 </script>
+  
+   

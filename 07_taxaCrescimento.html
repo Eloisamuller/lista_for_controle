@@ -7,10 +7,20 @@
 
     //ENTRADA
 
-    
+    let populacao = 80000;
+    const crescimento = 0.03;
+    const meta = 200000;
+    let tempo = 0;
+
     //PROCESSAMENTO
 
+    if (populacao < meta) {
+        populacao += populacao *crescimento;
+        tempo++;
+    }
     
     //SAÍDA
+
+    document.write(`Serão necessários ${tempo} anos para que a população atinja ${meta} habitantes.`);
 
 </script>

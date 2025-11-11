@@ -6,11 +6,25 @@
     */
 
     //ENTRADA
+    let populacao = 50000;
+    const crescimento = 0.015;
+    const prazo1 = 5;
+    const prazo2 = 10;
+    let populacao1 = populacao;
+    let populacao2 = populacao;
 
-    
     //PROCESSAMENTO
-    
+
+    for (let i = 1; i <= prazo2; i++) {
+        populacao += populacao * crescimento;
+        if (ano === anosPrazo1) {
+            populacao1 = populacao;
+        }
+    }
 
     //SAÍDA
+
+    document.write(`População prevista em ${prazo1} anos: ${Math.round(populacao1)} habitantes.<br> População prevista em ${prazo2} anos: ${Math.round(populacao)} habitantes.`);
+
 
 </script>
